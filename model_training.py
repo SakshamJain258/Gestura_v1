@@ -2,7 +2,7 @@
 from ASL import *
 from keras._tf_keras.keras.saving import save_model
 
-# create_bins()
+# create_bins() 
 # data_collection2()
 sequencing()
 X=np.array(sequences)

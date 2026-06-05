@@ -204,7 +204,8 @@ model = build_hybrid_model((60,258),actions.shape[0])
 # model.add(Dense(64,activation='relu'))
 # model.add(Dense(32,activation='relu'))
 # model.add(Dense(actions.shape[0],activation='softmax'))
-#
+
+
 model.compile(optimizer="Adam",loss="categorical_crossentropy",metrics=['categorical_accuracy'])
 
 

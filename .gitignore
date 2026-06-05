@@ -25,3 +25,6 @@ checkpoints/
 # Local secrets
 .env
 *.env
+
+.gitignore
+    

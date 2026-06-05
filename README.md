@@ -65,11 +65,8 @@ Create a local environment inside this repo:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
-
-The `.venv/` folder is intentionally ignored by Git. Do not push it to GitHub.
 
 ## Run Live Recognition
 
@@ -105,24 +102,6 @@ The v1 model uses:
 - soft attention to weight important frames
 - a dense softmax classifier over the 17 sign classes
 
-## GitHub Workflow
-
-After changing files:
-
-```powershell
-git status
-git add .
-git commit -m "Describe the change"
-git push
-```
-
-Do not commit:
-
-- `.venv/`
-- `__pycache__/`
-- `.idea/`
-- `.env` files
-- generated logs/checkpoints unless intentionally needed
 
 ## Current Validation
 
