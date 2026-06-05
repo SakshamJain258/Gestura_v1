@@ -20,7 +20,7 @@ class SignLanguageApp(QWidget):
         self.setGeometry(100, 100, 1280, 720)
         self.dark_mode = True
 
-        self.camera_index = 2 
+        self.camera_index = 0
         self.capture = None
         self.timer = QTimer()
         self.subtitle_size = 24
@@ -29,7 +29,7 @@ class SignLanguageApp(QWidget):
         self.sequence = []
         self.sentence = []
         self.predictions=[]
-        self.threshold = 0.92
+        self.threshold = 0.85
         self.holistic = mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
         # model.compile(optimizer="Adam", loss="categorical_crossentropy", metrics=['categorical_accuracy'])

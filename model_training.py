@@ -12,7 +12,7 @@ log_dir=os.path.join("Logs")
 tb_callback=TensorBoard(log_dir=log_dir)
 
 try:
-    model.fit(x_train, y_train, epochs=6000,batch_size=256,verbose=2, callbacks=tb_callback)
+    model.fit(x_train, y_train, epochs=6000,batch_size=256,verbose=1, callbacks=tb_callback)
 except KeyboardInterrupt:
     print("\nTraining interrupted. Saving model...")
 
