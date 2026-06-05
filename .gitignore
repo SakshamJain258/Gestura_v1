@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+my_venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Notebooks / generated training output
+.ipynb_checkpoints/
+Logs/
+logs/
+runs/
+checkpoints/
+
+# Local secrets
+.env
+*.env
